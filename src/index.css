@@ -9,7 +9,7 @@ body, #root{
   height: 100vh;
   margin:0;
 }
-body, input, select, button,textarea{
+body, input, select, button,textarea, option{
   font-size: 1.6rem; /* 16px */
   font-family:  'Montserrat', Arial, Helvetica, sans-serif;
   font-weight: bold;
@@ -126,4 +126,17 @@ img{
 }
 .button.primary{
   background-color: #f0c040;
+}
+
+/* Filter */
+
+.filter{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 1rem;
+  border-bottom: 0.1rem #c0c0c0 solid;
+}
+.filter div{
+  flex: 1;
 }
