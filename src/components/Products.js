@@ -1,14 +1,12 @@
 import React, { Fragment } from "react";
-import Data from "../Data.json";
 import formatCurrency from "../util"
-export default function () {
-  const product = Data;
-  /* console.log(product) */
+export default function ({products}) {
+
   return (
     <Fragment>
       <div>
         <ul className="products">
-          {product.products.map((product) => (
+          {products.map((product) => (
             <li key={product.id}>
               <div className="product">
                 <a href={"#" + product._id}>
